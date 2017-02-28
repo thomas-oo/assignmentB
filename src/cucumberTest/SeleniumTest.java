@@ -42,13 +42,13 @@ private static String pathToChromeDriver = "/Users/thomas/Projects/eclipse/cucum
         //go to men's section and click on Vetements brand
         WebDriverWait wait = (new WebDriverWait(driver, 10));
         WebElement mensSection = null;
-        while(!wait.until(ExpectedConditions.titleContains("Account Details"))){
-        	mensSection = driver.findElement(By.xpath("//a[@id='linkMen']"));
-        }
+        wait.until(ExpectedConditions.titleContains("Account Details"));
+        mensSection = driver.findElement(By.xpath("//a[@id='linkMen']"));
         mensSection.click();
         driver.findElement(By.xpath("//div[@class='browsing-side-navigation text-left']/div[@class='section'][2]/ul[@class='nav nav--stacked']/li[201]/a")).click();
         
         //find an item, Black champion edition archive hoodie
+        wait.until(ExpectedConditions.titleContains("Vetements"));
         driver.findElement(By.xpath("//div[@class='browsing-product-item'][10]/a/div[@class='browsing-product-description text-center vspace1']/p[@class='hidden-smartphone-landscape']")).click();
         //remember the item
         WebElement productDescription = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.className("product-description-container")));

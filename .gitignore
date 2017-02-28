@@ -1,0 +1,9 @@
+.classpath
+.project
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+bin/cucumberTest/SeleniumTest.class
+bin/cucumberTest/TestRunner.class
+target/classes/cucumberTest/SeleniumTest.class
+target/classes/cucumberTest/TestRunner.class
+target/classes/stepDefinition/Test_Steps.class

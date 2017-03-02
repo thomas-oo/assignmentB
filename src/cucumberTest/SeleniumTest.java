@@ -82,8 +82,10 @@ private static String pathToChromeDriver = "/Users/thomas/Projects/eclipse/cucum
     	System.out.println("Found " + shoppingItems.size() + " items!");
     	System.out.println("Found thru filter: " + results.size() + " items!");
         
+    	WebElement linkToProduct = results.get(0).findElement(By.xpath(".//div[@class='span3 text-center']/a/img"));
+    	linkToProduct.click();
         
-        driver.quit();
+        //driver.quit();
 	}
 
 }

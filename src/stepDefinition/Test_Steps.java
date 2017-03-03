@@ -188,16 +188,40 @@ public class Test_Steps {
     
     @Then("^User is prompted to login or create an account$")
     public void user_is_prompted_to_login_or_create_an_account() throws Throwable {
-        throw new PendingException();
+        boolean loginButtonShown = driver.findElement(By.id("submitLogin")).isDisplayed();
+        boolean createButtonShown = driver.findElement(By.id("submitRegister")).isDisplayed();
+        if(loginButtonShown && createButtonShown){
+        	return;
+        }else{
+        	throw new Exception("Not prompted to login or create an account!");
+        }
     }
     
     @And("^User logs in thru the prompt$")
     public void user_logs_in_thru_the_prompt() throws Throwable {
-        throw new PendingException();
+        driver.findElement(By.name("email")).sendKeys("oo.thomas96@gmail.com");
+        driver.findElement(By.name("password")).sendKeys("testtest123");
+        driver.findElement(By.id("submitLogin")).click();
+        wait.until(
+        		ExpectedConditions.or(
+        		ExpectedConditions.titleContains("Shopping Cart"),
+        		ExpectedConditions.titleContains("Checkout")));
+        if(driver.getTitle().contains("Checkout")){
+        	driver.navigate().back();
+        }
     }
     
     @And("^User sees the same item in cart$")
     public void user_sees_the_same_item_in_cart() throws Throwable {
-        throw new PendingException();
+    	List<WebElement> shoppingItems = driver.findElements(By.xpath("//div[@class='row-fluid row-table shopping-item']"));
+    	Predicate<WebElement> byAttribute = webelement -> webelement.getAttribute("data-product-sku").equals(productSKU);
+    	
+    	List<WebElement> results = shoppingItems.stream().filter(byAttribute).collect(Collectors.<WebElement> toList());
+    	if(results.isEmpty()){
+    		throw new Exception("Item not found in cart!");
+    	}else{
+    		numberOfProductsInBag = results.size();
+    		System.out.println("Found " + numberOfProductsInBag + " quantity of item SKU: " +productSKU);
+    	}
     }
 }

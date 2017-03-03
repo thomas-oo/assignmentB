@@ -204,7 +204,7 @@ public class Test_Steps {
         driver.findElement(By.id("submitLogin")).click();
         wait.until(
         		ExpectedConditions.or(
-        		ExpectedConditions.titleContains("Shopping Cart"),
+        		ExpectedConditions.titleContains("Shopping Bag"),
         		ExpectedConditions.titleContains("Checkout")));
         if(driver.getTitle().contains("Checkout")){
         	driver.navigate().back();

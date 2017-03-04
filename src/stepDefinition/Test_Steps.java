@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -20,15 +21,17 @@ import cucumber.api.java.en.*;
 public class Test_Steps {
 	WebDriver driver;
 	WebDriverWait wait;
-	String pathToChromeDriver = "/Users/thomas/Projects/eclipse/cucumber and selenium";
+	String pathToChromeDriver = "/Users/gibea/Downloads/chromedriver_win32";
 	
 	String productSKU;
 	int numberOfProductsInBag;
 	
 	@Given("^User is on Home Page and logged in$")
     public void user_is_on_home_page_and_logged_in() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", pathToChromeDriver+"/chromedriver");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", pathToChromeDriver+"/chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
+		driver = new ChromeDriver(options);
 		wait = (new WebDriverWait(driver, 10));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -153,7 +156,7 @@ public class Test_Steps {
     
     @Given("^User is on Home Page and logged out$")
     public void user_is_on_home_page_and_logged_out() throws Throwable {
-        System.setProperty("webdriver.chrome.driver", pathToChromeDriver+"/chromedriver");
+        System.setProperty("webdriver.chrome.driver", pathToChromeDriver+"/chromedriver.exe");
 		driver = new ChromeDriver();
 		wait = (new WebDriverWait(driver, 10));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -191,7 +194,7 @@ public class Test_Steps {
         boolean loginButtonShown = driver.findElement(By.id("submitLogin")).isDisplayed();
         boolean createButtonShown = driver.findElement(By.id("submitRegister")).isDisplayed();
         if(loginButtonShown && createButtonShown){
-        	return;
+            return;
         }else{
         	throw new Exception("Not prompted to login or create an account!");
         }

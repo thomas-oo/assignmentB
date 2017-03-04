@@ -14,10 +14,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumTest {
-private static String pathToChromeDriver = "/Users/thomas/Projects/eclipse/cucumber and selenium";
+private static String pathToChromeDriver = "/Users/gibea/Downloads/chromedriver_win32";
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", pathToChromeDriver+"/chromedriver");
+		System.setProperty("webdriver.chrome.driver", pathToChromeDriver+"/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait = (new WebDriverWait(driver, 10));
 		 

@@ -59,6 +59,7 @@ public class Test_Steps {
 
     @Then("^User sees item in bag$")
     public void user_sees_item_in_bag() throws Throwable {
+        driver.navigate().refresh();
     	List<WebElement> shoppingItems = driver.findElements(By.xpath("//div[@class='row-fluid row-table shopping-item']"));
     	Predicate<WebElement> byAttribute = webelement -> webelement.getAttribute("data-product-sku").equals(productSKU);
     	
@@ -142,6 +143,7 @@ public class Test_Steps {
     //TODO: small bug here where sometimes an additional item is not found in the cart. probably due to lag?
     @Then("^User sees an additional item in bag$")
     public void user_sees_an_additional_item_in_bag() throws Throwable {
+        driver.navigate().refresh();
     	List<WebElement> shoppingItems = driver.findElements(By.xpath("//div[@class='row-fluid row-table shopping-item']"));
     	Predicate<WebElement> byAttribute = webelement -> webelement.getText().contains("Vetements") && webelement.getText().contains("Black Champion Edition Archive Hoodie");
     	List<WebElement> results = shoppingItems.stream().filter(byAttribute).collect(Collectors.<WebElement> toList());
@@ -157,7 +159,9 @@ public class Test_Steps {
     @Given("^User is on Home Page and logged out$")
     public void user_is_on_home_page_and_logged_out() throws Throwable {
         System.setProperty("webdriver.chrome.driver", pathToChromeDriver+"/chromedriver.exe");
-		driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
+        driver = new ChromeDriver(options);
 		wait = (new WebDriverWait(driver, 10));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 

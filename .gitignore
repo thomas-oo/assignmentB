@@ -57,3 +57,4 @@ assignmentB.iml
 .idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.m2e.core.prefs
+chromedriver

@@ -1,7 +1,6 @@
 package fitNesseFixtures;
 import stepDefinition.Test_Steps;
 
-
 public class TestSuccess{
 	Test_Steps testSteps;
 	public TestSuccess(){
@@ -9,34 +8,74 @@ public class TestSuccess{
 	}
 	
 	public Boolean startLoggedIn(){
-		try {
-			testSteps.user_is_on_home_page_and_logged_in();
-		} catch (Throwable e) {
-
-			return false;
-		}
-		return true;
+        try {
+            testSteps.user_is_on_home_page_and_logged_in();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
 	}
 	
 	public Boolean navigateProductPage(){
-		return false;
+        try {
+            testSteps.user_navigates_to_product_page();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
 	}
 	public Boolean selectProduct(){
-		return false;
+        try {
+            testSteps.user_selects_a_product();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
 	}
 	public Boolean selectSize(){
-		return false;
+        try {
+            testSteps.user_selects_a_size();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
 	}
 	public Boolean addToBag(){
-		return false;
+        try {
+            testSteps.user_clicks_add_to_bag();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
 	}
 	public Boolean goToBag(){
-		return false;
+        try {
+            testSteps.user_goes_to_shopping_bag();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
 	}
 	public Boolean seesItemInBag(){
-		return false;
+        try {
+            testSteps.user_sees_item_in_bag();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        return true;
 	}
 	public Boolean seesCheckoutButton(){
-		return false;
+        try {
+            testSteps.user_sees_checkout_button();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        return true;
 	}
 }

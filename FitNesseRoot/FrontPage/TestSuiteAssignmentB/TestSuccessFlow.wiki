@@ -1,6 +1,6 @@
 !define TEST_SYSTEM {slim} 
 !path target\classes\
-!path lib\selenium-java-3.2.0\client-combined-3.2.0-nodeps.jar
+!path lib\*.jar
 
 !|import|
 |fitNesseFixtures|

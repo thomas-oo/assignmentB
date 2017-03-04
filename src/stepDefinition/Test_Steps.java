@@ -20,7 +20,7 @@ import cucumber.api.java.en.*;
 public class Test_Steps {
 	WebDriver driver;
 	WebDriverWait wait;
-	String pathToChromeDriver = "/Users/thomas/Projects/eclipse/cucumber and selenium";
+	String pathToChromeDriver = "/Users/thomas/Projects/IntelliJ/assignmentB";
 	
 	String productSKU;
 	int numberOfProductsInBag;
@@ -56,6 +56,7 @@ public class Test_Steps {
 
     @Then("^User sees item in bag$")
     public void user_sees_item_in_bag() throws Throwable {
+	    driver.navigate().refresh();
     	List<WebElement> shoppingItems = driver.findElements(By.xpath("//div[@class='row-fluid row-table shopping-item']"));
     	Predicate<WebElement> byAttribute = webelement -> webelement.getAttribute("data-product-sku").equals(productSKU);
     	

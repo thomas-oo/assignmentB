@@ -1,42 +1,42 @@
 package fitNesseFixtures;
 import stepDefinition.Test_Steps;
 
-public class TestSuccess {
+
+public class TestSuccess{
 	Test_Steps testSteps;
 	public TestSuccess(){
 		testSteps = new Test_Steps();
 	}
 	
-	public Boolean start_loggedin(){
+	public Boolean startLoggedIn(){
 		try {
 			testSteps.user_is_on_home_page_and_logged_in();
 		} catch (Throwable e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+
 			return false;
 		}
 		return true;
 	}
 	
-	public Boolean navigate_product_page(){
+	public Boolean navigateProductPage(){
 		return false;
 	}
-	public Boolean select_product(){
+	public Boolean selectProduct(){
 		return false;
 	}
-	public Boolean select_size(){
+	public Boolean selectSize(){
 		return false;
 	}
-	public Boolean add_to_bag(){
+	public Boolean addToBag(){
 		return false;
 	}
-	public Boolean go_to_bag(){
+	public Boolean goToBag(){
 		return false;
 	}
-	public Boolean sees_item_in_bag(){
+	public Boolean seesItemInBag(){
 		return false;
 	}
-	public Boolean sees_checkout_button(){
+	public Boolean seesCheckoutButton(){
 		return false;
 	}
 }

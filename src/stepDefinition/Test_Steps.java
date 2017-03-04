@@ -21,7 +21,7 @@ import cucumber.api.java.en.*;
 public class Test_Steps {
 	WebDriver driver;
 	WebDriverWait wait;
-	String pathToChromeDriver = "/Users/gibea/Downloads/chromedriver_win32";
+	String pathToChromeDriver = "lib/chromedriver_win32";
 	
 	String productSKU;
 	int numberOfProductsInBag;

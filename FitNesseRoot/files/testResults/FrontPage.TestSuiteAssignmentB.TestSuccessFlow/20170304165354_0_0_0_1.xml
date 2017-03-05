@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteAssignmentB.TestSuccessFlow</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <date>2017-03-04T16:53:54-05:00</date>
+    <runTimeInMillis>38</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: target\classes\&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: fitnesse-standalone.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: lib\selenium\*&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitNesseFixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;stepDefinition&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;TestSuccess &lt;span class="error"&gt;java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;ensure &lt;span class="error"&gt;The instance scriptTableActor.startLoggedIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;start logged in&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>TestSuccessFlow</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitNesseFixtures'}</instruction>
+        <slimResult>pass(fitNesseFixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitNesseFixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='stepDefinition'}</instruction>
+        <slimResult>pass(stepDefinition)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>stepDefinition</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='TestSuccess', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='startLoggedIn', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.startLoggedIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\gibea\IdeaProjects\assignmentB\fitnesse-standalone.jar;target\classes\;fitnesse-standalone.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\htmlunit-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-api;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-chrome-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-edge-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-firefox-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-ie-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-java;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-opera-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-parent;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-remote-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-safari-driver;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-support fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>257</totalRunTimeInMillis>
+</testResults>
+

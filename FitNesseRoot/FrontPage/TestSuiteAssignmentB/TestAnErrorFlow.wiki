@@ -1,0 +1,22 @@
+!define TEST_SYSTEM {slim} 
+!path target\classes\
+!path lib\*.jar
+
+!|import|
+|fitNesseFixtures|
+|stepDefinition|
+
+Scenario: Error flow, user adds to cart without logging in
+
+!| script | test error |
+| ensure | start logged out |
+| ensure |select product|
+| ensure |select size|
+| ensure |add to shopping cart|
+| ensure |go to shopping cart|
+| ensure |sees item in bag|
+| ensure |does not see checkout|
+| ensure |prompted to login|
+| ensure |login through prompt|
+| ensure |see same item in cart|
+| ensure |sees checkout button|

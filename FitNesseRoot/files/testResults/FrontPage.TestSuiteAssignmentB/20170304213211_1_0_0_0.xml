@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteAssignmentB</rootPath>
+  <pageHistoryReference>
+    <name>FrontPage.TestSuiteAssignmentB.TestSuccessFlow</name>
+    <date>2017-03-04T21:32:11-05:00</date>
+    <pageHistoryLink>FrontPage.TestSuiteAssignmentB.TestSuccessFlow?pageHistory&amp;resultDate=20170304213211</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12578</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\gibea\IdeaProjects\assignmentB\fitnesse-standalone.jar;target\classes\;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium-server-standalone-3.2.0.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>Found 3 quantity of item SKU: 171669M202001
+User sees checkout button successfully.
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 23180
+
+Only local connections are allowed.
+
+Mar 04, 2017 9:32:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>13327</totalRunTimeInMillis>
+</suiteResults>
+

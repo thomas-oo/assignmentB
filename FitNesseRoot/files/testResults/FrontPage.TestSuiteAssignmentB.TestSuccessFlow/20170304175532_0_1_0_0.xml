@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteAssignmentB.TestSuccessFlow</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>6</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2017-03-04T17:55:33-05:00</date>
+    <runTimeInMillis>60</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;span class="meta"&gt;classpath: target\classes\&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: lib\selenium\htmlunit-driver\2.24\*.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: lib\selenium\selenium-api\3.2.0\*.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: lib\selenium\selenium-chrome-driver\3.2.0\*.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: lib\selenium\selenium-java\3.2.0\*.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: lib\selenium\selenium-support\3.2.0\*.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitNesseFixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;stepDefinition&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;TestSuccess&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;ensure&lt;/td&gt;
+		&lt;td class="error"&gt;start logged in&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: com/google/common/collect/Lists
+	at org.openqa.selenium.chrome.ChromeOptions.&amp;lt;init&amp;gt;(ChromeOptions.java:74) [selenium-chrome-driver-3.2.0.jar]
+	at fitNesseFixtures.TestSuccess.startLoggedIn(TestSuccess.java:37) [file:/C:/Users/gibea/IdeaProjects/assignmentB/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.Lists
+	at java.net.URLClassLoader.findClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.8.0_121]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(Unknown Source) [rt.jar:1.8.0_121]
+	at org.openqa.selenium.chrome.ChromeOptions.&amp;lt;init&amp;gt;(ChromeOptions.java:74) [selenium-chrome-driver-3.2.0.jar]
+	at fitNesseFixtures.TestSuccess.startLoggedIn(TestSuccess.java:37) [file:/C:/Users/gibea/IdeaProjects/assignmentB/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.8.0_121]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;navigate product page&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;select product&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;select size&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;add to bag&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;go to bag&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;sees item in bag&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;sees checkout button&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>TestSuccessFlow</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitNesseFixtures'}</instruction>
+        <slimResult>pass(fitNesseFixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitNesseFixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='stepDefinition'}</instruction>
+        <slimResult>pass(stepDefinition)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>stepDefinition</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='TestSuccess', args=[]}</instruction>
+        <slimResult>pass(TestSuccess)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>TestSuccess</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='startLoggedIn', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='navigateProductPage', args=[]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_1_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='selectProduct', args=[]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='selectSize', args=[]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_5', instruction='call', instanceName='scriptTableActor', methodName='addToBag', args=[]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_1_5</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_6', instruction='call', instanceName='scriptTableActor', methodName='goToBag', args=[]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_1_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_7', instruction='call', instanceName='scriptTableActor', methodName='seesItemInBag', args=[]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_1_7</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_8', instruction='call', instanceName='scriptTableActor', methodName='seesCheckoutButton', args=[]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_1_8</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\gibea\IdeaProjects\assignmentB\fitnesse-standalone.jar;target\classes\;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\htmlunit-driver\2.24\htmlunit-driver-2.24-sources.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\htmlunit-driver\2.24\htmlunit-driver-2.24.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-api\3.2.0\selenium-api-3.2.0-sources.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-api\3.2.0\selenium-api-3.2.0.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-chrome-driver\3.2.0\selenium-chrome-driver-3.2.0-sources.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-chrome-driver\3.2.0\selenium-chrome-driver-3.2.0.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-java\3.2.0\selenium-java-3.2.0-sources.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-java\3.2.0\selenium-java-3.2.0.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-support\3.2.0\selenium-support-3.2.0-sources.jar;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium\selenium-support\3.2.0\selenium-support-3.2.0.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>274</totalRunTimeInMillis>
+</testResults>
+

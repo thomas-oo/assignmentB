@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuiteAssignmentB</rootPath>
+  <pageHistoryReference>
+    <name>FrontPage.TestSuiteAssignmentB.TestASuccessFlow</name>
+    <date>2017-03-04T22:20:07-05:00</date>
+    <pageHistoryLink>FrontPage.TestSuiteAssignmentB.TestASuccessFlow?pageHistory&amp;resultDate=20170304222007</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10667</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FrontPage.TestSuiteAssignmentB.TestAnAlternateFlow</name>
+    <date>2017-03-04T22:20:18-05:00</date>
+    <pageHistoryLink>FrontPage.TestSuiteAssignmentB.TestAnAlternateFlow?pageHistory&amp;resultDate=20170304222018</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11193</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FrontPage.TestSuiteAssignmentB.TestAnErrorFlow</name>
+    <date>2017-03-04T22:20:29-05:00</date>
+    <pageHistoryLink>FrontPage.TestSuiteAssignmentB.TestAnErrorFlow?pageHistory&amp;resultDate=20170304222029</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8483</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\gibea\IdeaProjects\assignmentB\fitnesse-standalone.jar;target\classes\;C:\Users\gibea\IdeaProjects\assignmentB\lib\selenium-server-standalone-3.2.0.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>Found 1 quantity of item SKU: 171669M202001
+User sees checkout button successfully.
+Found 1 quantity of item: Black Champion Edition Archive Hoodie
+User finds an additional product in bag!
+User sees checkout button successfully.
+ menu-item popover-hover-link 
+Found 1 quantity of item SKU: 171669M202001
+Found 1 quantity of item SKU: 171669M202001
+User sees checkout button successfully.
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 17996
+
+Only local connections are allowed.
+
+Mar 04, 2017 10:20:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 9022
+
+Only local connections are allowed.
+
+Mar 04, 2017 10:20:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 42802
+
+Only local connections are allowed.
+
+Mar 04, 2017 10:20:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>3</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>30902</totalRunTimeInMillis>
+</suiteResults>
+

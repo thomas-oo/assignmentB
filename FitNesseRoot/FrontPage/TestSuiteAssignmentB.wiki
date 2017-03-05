@@ -3,4 +3,10 @@ Suite
 Test: no
 ---
 !1 Test suite X
+
+Feature: Place product in shopping cart
+As a consumer
+I want place a product "product name" in the shopping cart
+So that I can purchase the product "product name" later on
+
 !contents -R2 -g -p -f -h

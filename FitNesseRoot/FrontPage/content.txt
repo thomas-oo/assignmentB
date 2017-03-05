@@ -2,7 +2,9 @@
 	* [[Test Suite Page][FrontPage.TestSuiteAssignmentB]]
 
 !3 For Specific Test Pages:
-	* [[Test Success Flow][FrontPage.TestSuiteAssignmentB.TestSuccessFlow]]
+	* [[Test a Success Flow][FrontPage.TestSuiteAssignmentB.TestASuccessFlow]]
+	* [[Test an Alternate Flow][FrontPage.TestSuiteAssignmentB.TestAnAlternateFlow]]
+	* [[Test an Error Flow][FrontPage.TestSuiteAssignmentB.TestAnErrorFlow]]
 
 
 

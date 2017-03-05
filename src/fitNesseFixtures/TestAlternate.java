@@ -1,13 +1,13 @@
 package fitNesseFixtures;
 import stepDefinition.Test_Steps;
 
-public class TestSuccess{
-	Test_Steps testSteps;
-	public TestSuccess(){
-		testSteps = new Test_Steps();
-	}
-	
-	public Boolean startLoggedIn(){
+public class TestAlternate {
+    Test_Steps testSteps;
+    public TestAlternate(){
+        testSteps = new Test_Steps();
+    }
+
+    public Boolean startLoggedIn(){
         try {
             testSteps.user_is_on_home_page_and_logged_in();
         } catch (Throwable throwable) {
@@ -15,45 +15,8 @@ public class TestSuccess{
             return false;
         }
         return true;
-	}
-	
-	public Boolean navigateProductPage(){
-        try {
-            testSteps.user_navigates_to_product_page();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            return false;
-        }
-        return true;
-	}
-	public Boolean selectProduct(){
-        try {
-            testSteps.user_selects_a_product();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            return false;
-        }
-        return true;
-	}
-	public Boolean selectSize(){
-        try {
-            testSteps.user_selects_a_size();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            return false;
-        }
-        return true;
-	}
-	public Boolean addToBag(){
-        try {
-            testSteps.user_clicks_add_to_bag();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            return false;
-        }
-        return true;
-	}
-	public Boolean goToBag(){
+    }
+    public Boolean goToShoppingCart(){
         try {
             testSteps.user_goes_to_shopping_bag();
         } catch (Throwable throwable) {
@@ -61,17 +24,53 @@ public class TestSuccess{
             return false;
         }
         return true;
-	}
-	public Boolean seesItemInBag(){
+    }
+    public Boolean seeProductTheyWantAnotherOf(){
         try {
-            testSteps.user_sees_item_in_bag();
+            testSteps.user_finds_the_product_they_want_another_of();
         } catch (Throwable throwable) {
             throwable.printStackTrace();
             return false;
         }
         return true;
-	}
-	public Boolean seesCheckoutButton(){
+    }
+    public Boolean clickProduct(){
+        try {
+            testSteps.user_clicks_on_the_product();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+    public Boolean selectSize(){
+        try {
+            testSteps.user_selects_a_size();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+    public Boolean addToShoppingCart(){
+        try {
+            testSteps.user_clicks_add_to_bag();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+    public Boolean seeAdditionalItemInCart(){
+        try {
+            testSteps.user_sees_an_additional_item_in_bag();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+    public Boolean seesCheckoutButton(){
         try {
             testSteps.user_sees_checkout_button();
         } catch (Throwable throwable) {
@@ -79,5 +78,5 @@ public class TestSuccess{
             return false;
         }
         return true;
-	}
+    }
 }

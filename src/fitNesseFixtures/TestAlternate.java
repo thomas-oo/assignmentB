@@ -1,6 +1,12 @@
 package fitNesseFixtures;
 import stepDefinition.Test_Steps;
 
+/*
+    Fixture Class for FitNesse script table in FrontPage.TestSuiteAssignmentB.TestAnAlternateFlow
+    Each function represent a row in the table.
+    Each function calls the appropriate function within Test_Steps to perform the actual code.
+    Return either True or False if the function completed successfully or not.
+ */
 public class TestAlternate {
     Test_Steps testSteps;
     public TestAlternate(){
